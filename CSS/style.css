@@ -1,0 +1,657 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+#loadingPage{
+  position: fixed;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  z-index: 99999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/preloader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.iconBar{
+  background-color: #0c65ed;
+  padding: 10px 0;
+}
+.iconBar i{
+  cursor: pointer;
+}
+.changeBgColor{
+  border: 1px solid transparent !important;
+}
+.changeBgColor:hover{
+  border: 1px solid transparent;
+}
+/* --------------NAVBAR------------------ */
+
+.navBarLogo{
+  background-image: url(../images/Trade-X-Logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navBarLogo img{
+  opacity: 0;
+}
+ .mainMenu{
+  visibility:hidden;
+  display:block;
+  opacity:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  }
+  .mainMenuPagesSpacing{
+    margin-left: -500px;
+    
+  }
+  .nav-item:hover .mainMenu{
+  visibility:visible;
+  opacity:0.9;
+  display: block;
+  border-top: 4px solid #007bff;
+  }
+  .dropdown-item:hover{
+    color: #007bff;
+  }
+  header .nav-item:hover .nav-link{
+    color: #007bff !important;
+    }
+
+    .dropdown-submenu {
+      position: relative;
+  }
+  .subMenuBlog {
+    top: 0;
+    left: -100%;
+    margin-top: -12px;
+    margin-left: -2px;
+    border-top: 4px solid #007bff;
+    display: block !important;
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.subMenuBlogMas{
+  top: 0;
+  left: -100%;
+  margin-top: -12px;
+  margin-left: -10px;
+  border-top: 4px solid #007bff;
+  display: block !important;
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+
+}
+.subMenuFeature {
+  top: 0;
+  left: -100%;
+  margin-top: -12px;
+  margin-left: -30px;
+  border-top: 4px solid #007bff;
+  display: block !important;
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  visibility:visible;
+  opacity:0.9;
+  display: block;
+  border-top: 4px solid #007bff;
+}
+.dropdown-submenu>a:after {
+      display: block;
+      content: " ";
+      float: right;
+      width: 0;
+      height: 0;
+      margin-top: 10px;
+  }
+  .navbarPos{
+    position: fixed;
+    top: 50px; left: 0; right: 0;
+    z-index: 555;
+    background-color: white;
+  }
+  .respNavbar{
+    display: none;
+  }
+
+
+  /*-------------------HEADER CAROUSEL------------- */
+  header .secBg1{
+    background-image: url(../images/ecommerce-cover-2-1024x600.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 120vh;
+    position: relative;
+  }
+  header .secBg2{
+    background-image: url(../images/slider3.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 120vh;
+    position: relative;
+  }
+  header .secBg3{
+    background-image: url(../images/slider2.jpg);
+    background-size: cover;
+    background-position: center top 50px;
+    height: 120vh;
+    position: relative;
+  }
+  header .secBg4{
+    background-image: url(../images/slider1.jpg);
+    background-size: cover;
+    background-position: center top 80px;
+    background-repeat: no-repeat;
+    height: 120vh;
+    position: relative;
+  }
+  header .header-content{
+    position: relative;
+    z-index: 4;
+  }
+  header .header-shadow{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; right: 0;
+  }
+  .hoverBtn:hover{
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+  header .owl-theme{
+    position: relative;
+  }
+  header .owl-theme .owl-dots{
+    position: absolute;
+    bottom: 45%; right: 30px;
+  }
+  header .owl-theme .owl-dots .owl-dot{
+    display:block !important;
+  }
+  
+  header .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 15px;
+    background: white;
+    transition: opacity .2s ease;
+    border-radius: 0 !important;
+    transition: all 0.5s;
+}
+
+header .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span
+{
+  background:transparent;
+  border: 1px solid white;
+  width: 12px;
+  height: 12px;
+}
+header .owl-carousel button.owl-dot:focus {
+  outline: none; 
+}
+
+
+/*-------------- About Us ------------------ */
+
+.shortLine{
+  background-color: #007bff;
+  height: 4px;
+  width: 50px;
+}
+.longLine{
+  background-color: #007bff;
+  height: 3px;
+  width: 80px;
+}
+.secHeadDecLeft{
+  position: relative;
+  bottom: 20px;
+  right: -20px;
+}
+.secHeadDecRight{
+  position: relative;
+  top: 15px;
+  left: -20px;
+}
+.aboutContentResp{
+  display: none;
+}
+.aboutContent{
+  background-color: white;
+  width: 350px;
+  position: absolute;
+  top: 20px;
+  border: 1px solid lightgray;
+}
+.brdr{
+  width: 70px;
+  margin-right: 20px;
+  height: 80px;
+}
+.flaticon-megaphone:before, .flaticon-controls:before, .flaticon-web-design:before, .flaticon-thumb-up:before {
+  font-size: 35px;
+}
+  .aboutContentDetails:hover .brdr i, .aboutContentDetails:hover .aboutContentDetailsTitle{
+    color: #007bff;
+  }
+.counter{
+  background-color: #f9f9f9;
+}
+.counter .row{
+  height: 250px;
+}
+.flaticon-computer:before, .flaticon-trophy:before, 
+.flaticon-smiling-emoticon-square-face:before, .flaticon-calendar-interface-symbol-tool:before{
+  font-size: 50px;
+  font-weight: 400;
+}
+.flatIconColor{
+  color: #0c65ed;
+}
+
+/*-------------------- OUR SERVICES --------------------------- */
+
+#services{
+  background-image: url(../images/service-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 150vh;
+  position: relative;
+}
+#services .header-shadow{
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; right: 0;
+}
+.serviceTitle{
+  color: white;
+  z-index: 55;
+}
+.serviceCaption{
+  color: white;
+  position: relative;
+  z-index: 55;
+  width: 55%;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 80px;
+}
+.serviceContent{
+  border: 1px solid lightgray;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.flaticon-cloud-computing:before, .serviceContent .flaticon-web-design:before, .flaticon-edit:before, 
+.serviceContent .flaticon-computer:before, .flaticon-network:before, .flaticon-wordpress:before{
+  font-size: 60px;
+  color: white;
+}
+.serviceContent h4{
+  font-size: 30px;
+  font-weight: 600;
+}
+.overLay{
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.serviceContent:hover .overLay{
+  top: 0px;
+  opacity: 1;
+}
+
+/*--------------- OUR WORKS ---------------*/
+.workCaption{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.navLink{
+  color: black;
+}
+.navLink:hover{
+  color: #0078ff;
+}
+.navSlash{
+  margin: 2px 20px;
+  font-size: 20px;
+}
+#works .active{
+  color: #007bff !important;
+  background-color: transparent !important;
+}
+.workContent:hover{
+  box-shadow: 0px 20px 35px gray;
+}
+.workOverlay{
+  background-color:rgba(12, 101, 237, 0.8);;
+  padding: 10px;
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.workContent:hover .workOverlay{
+  transform: scaleX(1);
+  
+}
+
+#cover{
+  margin: 100px 0;
+  background-image: url(../images/ecommerce-cover-2-1024x600.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+
+/*-------------- OUR TEAM ---------------*/
+#team{
+  background-color: #f9f9f9;
+}
+#team h3{
+  font-size: 32px;
+}
+.teamCaption{
+  padding-top: 10px;
+  width: 100%;
+  position: relative;
+  bottom: 55px;
+  /* left: -100px; */
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.teamCaption h6{
+  color: #0c65ed;
+}
+.teamOverlay{
+  width: 100%;
+  position: absolute;
+}
+.teamIcons{
+  background-color: #0c65ed;
+  padding: 15px 0;
+}
+.teamContent:hover .teamCaption{
+  bottom: 175px;
+  overflow: visible;
+}
+.teamContent:hover .teamCaption hr{
+  visibility: hidden;
+}
+
+/*------------ OUR PRICING  ------------*/
+
+.perYearBrdr{
+  background-color: transparent;
+  padding: 15px 45px !important;
+  border-top-right-radius: 150px !important;
+  border-bottom-right-radius: 150px !important;
+  border: 1px solid #0c65ed;
+  position: relative;
+  left: -50px;
+}
+.perMonthBrdr{
+  background-color: transparent;
+  padding: 15px 45px !important;
+  border-top-left-radius: 150px !important;
+  border-bottom-left-radius: 150px !important;
+  border: 1px solid #0c65ed;
+}
+#price .nav-pills .nav-link.active{
+color: white !important;
+background-color: #0c65ed;
+}
+.priceContent{
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid #eaeaea;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.coloredLine{
+  background-color: #0c65ed;
+}
+.coloredText{
+  color: #0c65ed;
+}
+.priceContentSpecial{
+  border: 1px solid #eaeaea;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 35px gray;
+}
+.priceContent h6, .priceContentSpecial h6{
+  color: #1f1f1f;
+  font-size: 35px;
+  font-weight: 600;
+}
+.priceContent h2{
+  font-size: 55px;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+/* --------subscribe------- */
+#subscribe{
+  background-color: #1f1f1f;
+  height: 25vh;
+}
+#subscribe button{
+  cursor: pointer;
+}
+
+/* ------------Testimonial ---------- */
+#testimonial .owl-carousel .owl-nav button.owl-prev
+{
+  background-color: #0c65ed;
+  color:inherit;
+  border-radius: 50px 0 0 50px;
+  width: 40px;
+  margin: 20px 8px;
+  color: white;
+  padding: 5px 2px !important;
+}
+#testimonial .owl-carousel .owl-nav button.owl-next{
+  background-color: #0c65ed;
+  color:inherit;
+  border-radius: 0 50px 50px 0;
+  width: 40px;
+  margin: 20px 8px;
+  color: white;
+  padding: 5px 2px !important;
+}
+#testimonial .owl-carousel .owl-nav button.owl-next:focus, #testimonial .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none; 
+}
+
+/*------------ Latest Blog -----------*/
+#latestBlog{
+  background-color: #f9f9f9;
+  padding-bottom: 10px;
+}
+.blogImg{
+  transition: all 0.5s;
+}
+.blogIcons{
+  background-color: #1a1a1a;
+  color: white;
+  transition: all 0.5s;
+}
+.line{
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+.subLine{
+  background-color: #0c65ed;
+  width: 30%;
+  height: 1px;
+  transition: all 0.5s;
+}
+.blogHover:hover .blogImg{
+  transform: scale(1.1) rotate(-2deg);
+}
+.blogHover:hover .subLine{
+  width: 100%;
+}
+.blogHover:hover .blogIcons{
+  background-color: #0c65ed;
+}
+.blogHover h5:hover{
+  color: #0c65ed;
+  cursor: pointer;
+}
+.readMoreBlog{
+  cursor: pointer;
+}
+.readMoreIcon{
+  transition: all 0.5s;
+}
+.readMoreBlog:hover .readMoreIcon{  
+  transform: translateX(5px);
+}
+
+/*---------- OUR CLIENTS -----------*/
+.clientTitle{
+  width: 35%;
+  margin: auto;
+}
+.clientImg{
+  filter: drop-shadow(-5px 5px 5px gray);
+}
+.purchase{
+  background-color: #0c65ed;
+  height: 20vh;
+}
+.purchase h4{
+  position: relative;
+  right: 85px;
+  bottom: 5px;
+}
+.purchase .flaticon-outgoing-call:before{
+  font-size: 100px;
+  color: white;
+  opacity: 0.4;
+}
+
+/*---------- Footer ------------*/
+.topFooter{
+  background-color: #1a1a1a;
+  height: 80vh;
+}
+.flaticon-placeholder:before{
+  color: white;
+  position: relative;
+  left: -10px;
+}
+.topFooter .flaticon-outgoing-call:before{
+  color: white;
+  position: relative;
+  left: -10px;
+}
+.topFooter .fa-envelope{
+  color: white;
+}
+.footerImg{
+  float: left;
+  height: 18%;
+  width: 25%;
+}
+.footerImg:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.footerCaption:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.clr{
+  clear: both;
+}
+.footerBtn:hover{
+  background-color: #0c65ed;
+  color: white;
+  border: 1px solid transparent;
+}
+.downFooter{
+  background-color: #1a1a1a;
+  height: 10vh;
+  box-shadow: 0px 20px 35px gray;
+}
+.toTop{
+  position: fixed;
+  bottom: 4%; right: 4%;
+  z-index: 55555;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+  background-color: #0078ff;
+  display: none;
+}
+
+.colorBox{
+  position: fixed;
+  left: -201px; 
+  top: 150px;
+  z-index: 5555555;
+}
+.colorBox i:hover{
+  cursor: pointer;
+  color: gray;
+}
+.colorOptions li{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+
+
+
